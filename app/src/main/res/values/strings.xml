@@ -1,8 +1,6 @@
 <resources>
     <!-- NAME OF THE APPLICATION. -->
     <string name="app_name">Jhar Tour Guide</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <!-- CONTENT DESCRIPTION FOR THE IMAGE VIEW. -->
     <string name="as_desc_jh_tour_banner">Jharkhand Tour Banner</string>
@@ -13,6 +11,13 @@
     <!-- TEXT "TOUR GUIDE" FOR THE SPLASH SCREEN. -->
     <string name="as_txt_tour_guide">TOUR GUIDE</string>
 
-    <!-- HEADER TEXT FOR THE MAIN ACTIVITY-->
+    <!-- HEADER TEXT FOR THE MAIN ACTIVITY. -->
     <string name="main_activity_label">Jharkhand Tour Guide</string>
+
+    <!-- HEADER TEXT FOR THE FRAGMENT ONE. -->
+    <string name="fragment_txt_one">FRAGMENT ONE</string>
+
+    <!-- HEADER TEXT FOR THE FRAGMENT TWO. -->
+    <string name="fragment_txt_two">FRAGMENT TWO</string>
+    <string name="banner">Image Banner</string>
 </resources>

@@ -1,10 +1,11 @@
-package com.bishram.jharkhand.tour.activities;
+package activities;
 
 import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 
 import com.bishram.jharkhand.tour.R;
 
@@ -19,7 +20,15 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        startMainActivity();
+        View view = findViewById(R.id.click_me);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                finish();
+            }
+        });
+//        startMainActivity();
     }
 
     // This method is called after a time interval of 3000 milliseconds.
