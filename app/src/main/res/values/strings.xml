@@ -15,9 +15,42 @@
     <string name="main_activity_label">Jharkhand Tour Guide</string>
 
     <!-- HEADER TEXT FOR THE FRAGMENT ONE. -->
-    <string name="fragment_txt_one">FRAGMENT ONE</string>
+    <string name="fragment_txt_one">DAMS &amp; LAKES</string>
 
     <!-- HEADER TEXT FOR THE FRAGMENT TWO. -->
-    <string name="fragment_txt_two">FRAGMENT TWO</string>
+    <string name="fragment_txt_two">WATERFALLS</string>
+
+    <!-- HEADER TEXT FOR THE FRAGMENT THREE. -->
+    <string name="fragment_txt_three">PARKS &amp; Zoo</string>
+
+    <!-- HEADER TEXT FOR THE FRAGMENT SEVEN. -->
+    <string name="fragment_txt_four">OTHER ATTRACTIONS</string>
+
+    <!-- IMAGE DESCRIPTION. -->
     <string name="banner">Image Banner</string>
+
+    <!-- TITLE OF THE NETARHAT DAM (LATEHAR) -->
+    <string name="netarhat_dam_latehar">Netarhat Dam (Latehar)</string>
+
+    <!-- TITLE OF THE CHANDIL DAM (JAMSHEDPUR). -->
+    <string name="chandil_dam_tata">Chandil Dam (Jamshedpur)</string>
+
+    <!-- TITLE OF THE HATIA DAM (DHURWA). -->
+    <string name="hatia_dam_dhurwa">Hatia Dam (Dhurwa)</string>
+
+    <!-- TITLE OF THE PATRATU DAM (RANCHI). -->
+    <string name="patratu_dam_ranchi">Patratu Dam (Ranchi)</string>
+
+    <!--TITLE OF THE TILAIYA DAM (RAMGARH). -->
+    <string name="tilaiya_dam_ramgarh">Tilaiya Dam (Ramgarh)</string>
+
+    <!-- TITLE OF THE TENUGHAT DAM (BOKARO)-->
+    <string name="tenughat_dam_bokaro">Tenughat Dam (Bokaro)</string>
+
+    <!-- TITLE OF THE MASSANJORE DAM (DUMKA)-->
+    <string name="massanjore_dam_dumka">Massanjore Dam (Dumka)</string>
+
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

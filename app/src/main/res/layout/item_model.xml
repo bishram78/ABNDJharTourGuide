@@ -1,90 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="260dp"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <android.support.v7.widget.CardView
+    <ImageView
+        android:id="@+id/banner_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/banner"
+        app:srcCompat="@drawable/splash_background" />
+
+    <LinearLayout
+        android:id="@+id/im_ll_info_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:foreground="@drawable/ripple_4_card"
-        android:layout_margin="16dp"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="3dp">
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:paddingTop="8dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/banner_image"
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:scaleType="centerCrop"
-                android:contentDescription="@string/banner"
-                app:srcCompat="@drawable/splash_background" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:background="#703F51B5" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/banner_title"
+                android:id="@+id/im_tv_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:layout_margin="18dp"
-                android:textSize="18sp"
-                tools:text="Banner name"/>
+                android:textColor="#029789"
+                android:includeFontPadding="false"
+                tools:text="3.5"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <RatingBar
+                android:id="@+id/im_rb_ratings"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:color/white"
-                android:paddingTop="8dp"
-                android:paddingBottom="16dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:orientation="vertical"
-                android:layout_below="@id/banner_image">
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:rating="3.5"
+                style="?android:attr/ratingBarStyleSmall" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+            <TextView
+                android:id="@+id/im_tv_reviews"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:includeFontPadding="false"
+                android:textStyle="italic"
+                tools:text="(125 reviews)"/>
+        </LinearLayout>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#029789"
-                        android:text="3.5"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-                    <RatingBar
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginEnd="8dp"
-                        android:rating="3.5"
-                        style="?android:attr/ratingBarStyleSmall" />
+            <TextView
+                android:id="@+id/im_tv_dis_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textColor="@color/colorPrimaryDark"
+                tools:text="2.5 Km from the city bus stand"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="(125 reviews)"/>
-                </LinearLayout>
+            <TextView
+                android:id="@+id/im_tv_timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open at 10:30PM"
+                android:textColor="@android:color/holo_green_dark"/>
+        </LinearLayout>
+    </LinearLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:text="2.5 Km from the city bus stand"/>
-            </LinearLayout>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
-</LinearLayout>
+    <TextView
+        android:id="@+id/banner_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:background="@drawable/text_background"
+        android:layout_above="@id/im_ll_info_container"
+        android:paddingTop="24dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="18sp"
+        tools:text="Banner name"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@drawable/border_bkg" />
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/as_desc_jh_tour_banner"
+        android:background="@drawable/background_border_round"
+        android:src="@drawable/ic_location_white"/>
+
+</RelativeLayout>
